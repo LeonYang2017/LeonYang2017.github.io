@@ -1,17 +1,25 @@
----
-layout: default
-title: 我的Blog
----
-<h2>{{ page.title }}</h2>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>WorkWorkWork</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">  
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-<p>最新文章</p>
+<body>
+	<nav class="navbar navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Leon's Navigation</a>
+			</div>
 
-<ul>
+			<ul class="nav navbar-nav">
+				<li class="active"><a data-toggle="tab" href="#baidu">Home</a></li>
+			</ul>
+	</nav>
 
-	{% for post in site.posts %}
+	<h3>别来烦老！<strong>老的工作至关重要！</strong></h3>
 
-	<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-
-	{% endfor %}
-
-</ul>
+</body>
